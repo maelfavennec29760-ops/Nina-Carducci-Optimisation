@@ -21,6 +21,9 @@ body {
 .top-header .name {
 	font-size: 26px;
 }
+.visually-hidden {
+    color: #000 !important;
+}
 
 .nav ul {
 	display: flex;
@@ -62,14 +65,15 @@ body {
 }
 
 .picture {
-	flex: 1;
+	flex: 0 0 376px;
 	margin: 0 20px;
 	z-index: 0;
 }
 
 .picture img {
 	width: 100%;
-
+	height: auto;
+	display: block;
 }
 #about-me {
 	flex: 2
@@ -101,12 +105,13 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
+	background-color: #8C6A00;
+	color: white;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
